@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="image/favicon (2).png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>Discord-Clone</title>
+</head>
+
+<body>
+  <div class="main-wraper">
+    <div class="wraper">
+      <!-- Navigation section -> Discord logo and login button -->
+      <section class="navigation-section" id="nav-section">
+        <div class="stickey-help">
+          <div class="navbar-stickey" id="stickey-navbar">
+            <img src="image/discord_navbarlogo.png" alt="" class="scroll">
+            <div class="hidden" id="btnid">
+              <button><img src="image/discord_navbarlogo.png" alt=""></button>
+            </div>
+            <button class="loginbtn">Log In</button>
+          </div>
+        </div>
+        <!-- Navigation section -> Nav links -->
+        <nav class="navlinks">
+          <ul>
+            <li><a href="https://discord.com/api/download?platform=win">Download</a></li>
+            <li><a href="">Nitro</a></li>
+            <li><a href="">Discover</a></li>
+            <li><a href="">Safety <i class="fa-solid fa-angle-down" id="firstdown"></i></a>
+              <div class="dropdown firstddown" id="first">
+                <div class="first-compartment">
+                  <div class="first">
+                    <ul>
+                      <li><a href="">Resources</a></li>
+                      <li><a href="">Safety News</a></li>
+                      <li><a href="">Safety Library</a></li>
+                    </ul>
+                  </div>
+                  <div class="second">
+                    <ul>
+                      <li><a href="">Community Guidelines</a></li>
+                      <li><a href="">Resources</a></li>
+                      <li><a href="">Privacy Hub</a></li>
+                      <li><a href="">Policy Hub</a></li>
+                      <li><a href="">Transparency Hub</a></li>
+                    </ul>
+                    <hr>
+                    <div class="second-compartment">
+                      <ul>
+                        <li><a href="">Documentation</a></li>
+                        <li><a href="">Transparency Reports</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="third">
+                    <ul>
+                      <li><a href="">Family Center</a></li>
+                      <li><a href="">Resources</a></li>
+                      <li><a href="">Parent Hub</a></li>
+                      <li><a href="">Teen Charter</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+            <li><a href="">Quests <i class="fa-solid fa-angle-down" id="seconddown"></i></a>
+              <div class="dropdown secondddown" id="second">
+                <ul>
+                  <li><a href="">Resources</a></li>
+                  <li><a href="">Advertising</a></li>
+                  <li><a href="">Success Stories</a></li>
+                  <li><a href="">Quests FAQ</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="">Support <i class="fa-solid fa-angle-down" id="thirddown"></i></a>
+              <div class="dropdown thirddown" id="third">
+                <ul>
+                  <li><a href="">Resources</a></li>
+                  <li><a href="">Help Center</a></li>
+                  <li><a href="">Feedback</a></li>
+                  <li><a href="">Submit a Request</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="">Blog <i class="fa-solid fa-angle-down" id="fourthdown"></i></a>
+              <div class="dropdown fourthddown" id="fourth">
+                <ul>
+                  <li><a href="">Collections</a></li>
+                  <li><a href="">Featured</a></li>
+                  <li><a href="">Community</a></li>
+                  <li><a href="">Discord HQ</a></li>
+                  <li><a href="">Engineering & Devlopers</a></li>
+                  <li><a href="">How to Discord</a></li>
+                  <li><a href="">Policy & Safety</a></li>
+                  <li><a href="">Product & Features</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="">Devlopers <i class="fa-solid fa-angle-down" id="fifthdown"></i></a>
+              <div class="dropdown fifthddown" id="fifth">
+                <ul>
+                  <li><a href="">Featured</a></li>
+                  <li><a href="">Discord Social SDK</a></li>
+                  <li><a href="">Apps & Activities</a></li>
+                  <hr>
+                  <li><a href="">Documentation</a></li>
+                  <li><a href="">Devloper Home</a></li>
+                  <li><a href="">Devloper Documentation <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                  <li><a href="">Devloper Applications <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                  <li><a href="">Devloper Help Center <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="">Careers</a></li>
+          </ul>
+
+        </nav>
+        <section class="group-chat-section">
+          <div class="content-image">
+            <div class="content">
+              <h1 class="heading">Group chat</h1>
+              <h1 class="heading">that’s all</h1>
+              <h1 class="heading">fun & games</h1>
+              <h1 class="paragraph firstpar">Discord is great for playing games and chilling with</h1>
+              <h1 class="paragraph">friends, or even building a worldwide community.</h1>
+              <h1 class="paragraph">Customize your own space to talk, play, and</h1>
+              <h1 class="paragraph">hang out.</h1>
+            </div>
+            <div class="image">
+              <!-- computer image -->
+              <img src="image/computer.png" alt="" width="590px">
+
+              <!-- lady image -->
+              <img src="image/lady_image.png" alt="" class="lady" width="180px">
+              <!-- moving robote image -->
+              <img src="image/mini_robote.png" alt="" class="minirobot" width="60px">
+              <!-- pig image -->
+              <img src="image/pig.png" alt="" class="pig" width="160px" height="140px">
+              <!-- leaf image -->
+              <img src="image/leafe_discord.png" alt="" class="leaf" width="165px">
+              <!-- Man image -->
+              <img src="image/man.png" alt="" class="man" width="155px">
+            </div>
+          </div>
+          <div class="downloaddiscord-opendiscord">
+
+            <a href="https://discord.com/api/download?platform=win"><button id="download"><svg width="24" height="24"
+                  viewBox="0 0 24 24" class="icon-2tQ9Jt">
+                  <g fill="currentColor">
+                    <path
+                      d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z">
+                    </path>
+                    <path
+                      d="M18 18.001V20.001H6V18.001H4V20.001C4 21.103 4.897 22.001 6 22.001H18C19.104 22.001 20 21.103 20 20.001V18.001H18Z">
+                    </path>
+                  </g>
+                </svg> Download for Windows</button></a>
+            <button id="opendiscord">Open Discord in your browser</button>
+          </div>
+        </section>
+      </section>
+
+      <!-- Video section -->
+      <section class="video">
+        <div class="video-container">
+          <img src="image/pig-move.gif" alt="" class="piggy" width="150px">
+          <div class="videocompartment1">
+            <div class="video-compartment">
+              <video autoplay muted loop>
+                <source src="image/firstvideo.mp4">
+              </video>
+            </div>
+            <div class="video-content">
+              <h1>MAKE YOUR GROUP CHATS MORE FUN</h1><br>
+              <p>Use custom emoji, stickers, soundboard effects and more to add your personality to your voice, video,
+                or text chat. Set your avatar and a custom status, and write your own profile to show up in chat your
+                way.</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="videocompartment1">
+            <div class="video-content">
+              <h1>stream like you’re in the same room</h1><br>
+              <p>High quality and low latency streaming makes it feel like you're hanging out on the couch with friends
+                while playing a game, watching shows, looking at photos, or idk doing homework or something.</p>
+            </div>
+            <div class="video-compartment">
+              <video autoplay muted loop>
+                <source src="image/secondevideo.mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="videocompartment1">
+            <div class="video-compartment">
+              <video autoplay muted loop>
+                <source src="image/thirdvideo.mp4">
+              </video>
+            </div>
+            <div class="video-content">
+              <h1>Hop in when you're free, no need to call</h1>
+              <br>
+              <p>Easily hop in and out of voice or text chats without having to call or invite anyone, so your party
+                chat lasts before, during, and after your game session.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Infinite Scroll Animation -->
+        <!-- <div class="moving-div">
+          <div class="first-line first1">
+            <h1>TALK</h1>
+            <img src="image/lineimage.png" alt="">
+            <h1>PLAY</h1>
+            <img src="image/lineimage.png" alt="">
+            <h1>CHAT</h1>
+            <img src="image/lineimage.png" alt="">
+            <h1>HANG OUT</h1>
+          </div>
+          <div class="first-line second1">
+            <h1>TALK</h1>
+            <img src="image/lineimage.png" alt="">
+            <h1>PLAY</h1>
+            <img src="image/lineimage.png" alt="">
+            <h1>CHAT</h1>
+            <img src="image/lineimage.png" alt="">
+            <h1>HANG OUT</h1>
+          </div>
+          <div class="first-line third1">
+            <h1>TALK</h1>
+            <img src="image/lineimage.png" alt="">
+            <h1>PLAY</h1>
+            <img src="image/lineimage.png" alt="">
+            <h1>CHAT</h1>
+            <img src="image/lineimage.png" alt="">
+            <h1>HANG OUT</h1>
+          </div>
+        </div> -->
+        <!-- Infinite Scroll Animation -->
+
+        <!-- Video after Scroll Animation -->
+
+        <div class="video-container">
+          <div class="videocompartment1">
+            <div class="video-content">
+              <h1>See who's around to chill</h1>
+              <br>
+              <p>See who's around, playing games, or just hanging out. For supported games, you can see what modes or
+                characters your friends are playing and directly join up.</p>
+            </div>
+            <div class="video-compartment">
+              <video autoplay muted loop>
+                <source src="image/fourthvideo.mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-container">
+          <div class="videocompartment1">
+            <div class="video-compartment">
+              <video autoplay muted loop>
+                <source src="image/fifthvideo.mp4">
+              </video>
+            </div>
+            <div class="video-content">
+              <h1>always have something to do together</h1>
+              <br>
+              <p>Watch videos, play built-in games, listen to music, or just scroll together and spam memes. Seamlessly
+                text, call, video chat, and play games, all in one group chat.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-container">
+          <div class="videocompartment1">
+            <div class="video-content">
+              <h1>WHEREVER YOU GAME, HANG OUT HERE</h1>
+              <br>
+              <p>On your PC, phone, or console, you can still hang out on Discord. Easily switch between devices and use
+                tools to manage multiple group chats with friends.</p>
+            </div>
+            <div class="video-compartment">
+              <video autoplay muted loop>
+                <source src="image/sixthvideo.mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="download">
+        <div class="heading-for-download">
+          <h1>YOU CAN'T SCROLL ANYMORE.</h1>
+          <h1>BETTER GO CHAT.</h1>
+        </div>
+        <div class="downloadbtn">
+          <a href="https://discord.com/api/download?platform=win"><button id="download1"><svg width="24" height="24"
+                viewBox="0 0 24 24" class="icon-2tQ9Jt">
+                <g fill="currentColor">
+                  <path
+                    d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z">
+                  </path>
+                  <path
+                    d="M18 18.001V20.001H6V18.001H4V20.001C4 21.103 4.897 22.001 6 22.001H18C19.104 22.001 20 21.103 20 20.001V18.001H18Z">
+                  </path>
+                </g>
+              </svg> Download for Windows</button></a>
+        </div>
+      </section>
+
+      <section class="footer-section" id="footer-id">
+        <!-- men and women images -->
+        <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/675005dc03927e9683fcaaee_Footer.webp"
+          alt="" width="80%" class="footer-men-women">
+        <!-- sitting piggy image -->
+        <img src="image/piggy-sit.png" alt="" width="25%" class="piggy-sit">
+        <!-- Leaf on piggy's head image -->
+        <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6729dcb95107159dc7e52855_Wumpus.webp"
+          alt="" class="leaf-animation">
+        <!-- mini roboat head image -->
+        <img src="image/head-of-roboat.png" alt="" width="11%" class="roboat-head">
+        <!-- mini roboat body image -->
+        <img src="image/body-of-roboat.png" alt="" width="7%" class="roboat-body">
+
+
+        <div class="language-links">
+          <div class="social-media">
+            <div class="mask">
+              <img src="image/lineimage.png" alt="">
+            </div>
+            <div class="language">
+              <p>Language</p>
+              <div class="select" id="selectid">
+                <a href="">English</a>
+                <i class="fa-solid fa-angle-down" id="selectlanguage"></i>
+              </div>
+              <div class="hidden" id="not">
+                <div class="lang">
+                  <a href="">Cestina</a>
+                </div>
+                <div class="lang">
+                  <a href="">Dansk</a>
+                </div>
+                <div class="lang">
+                  <a href="">Deutsch</a>
+                </div>
+                <div class="lang">
+                  <a href="">English</a>
+                </div>
+                <div class="lang">
+                  <a href="">English (UK)</a>
+                </div>
+                <div class="lang">
+                  <a href="">Espanol</a>
+                </div>
+                <div class="lang">
+                  <a href="">Espanol (America Latina)</a>
+                </div>
+                <div class="lang">
+                  <a href="">Francais</a>
+                </div>
+                <div class="lang">
+                  <a href="">Hrvatski</a>
+                </div>
+                <div class="lang">
+                  <a href="">Italiano</a>
+                </div>
+              </div>
+            </div>
+            <div class="social-icons" id="social-icon-div">
+              <p>Social</p>
+              <div class="icons" id="iconsdiv">
+                <div class="skype">
+                  <a href="https://x.com/discord"><img src="image/skype.svg" alt=""></a>
+                </div>
+                <div class="instagram">
+                  <a href="https://www.instagram.com/discord/"><img src="image/instagram.svg" alt=""></a>
+                </div>
+                <div class="facebook">
+                  <a href="https://www.facebook.com/discord/"><img src="image/facebook.svg" alt=""></a>
+                </div>
+                <div class="youtube">
+                  <a href="https://www.youtube.com/discord"><img src="image/youtube.svg" alt=""></a>
+                </div>
+                <div class="tiktok">
+                  <a href="https://www.tiktok.com/@discord"><img src="image/tiktok.svg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="links">
+            <div class="link-compartment">
+              <nav class="first-column">
+                <ul>
+                  <p>Product</p>
+                  <li><a href="">Download</a></li>
+                  <li><a href="">Nitro</a></li>
+                  <li><a href="">Status</a></li>
+                  <li><a href="">App Directory</a></li>
+                </ul>
+              </nav>
+              <nav class="second-column">
+                <ul>
+                  <p>Company</p>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Jobs</a></li>
+                  <li><a href="">Brand</a></li>
+                  <li><a href="">Newsroom</a></li>
+                </ul>
+              </nav>
+              <nav class="third-column">
+                <ul>
+                  <p>Resources</p>
+                  <li><a href="">College</a></li>
+                  <li><a href="">Support</a></li>
+                  <li><a href="">Safety</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">StreamKit</a></li>
+                  <li><a href="">Creators</a></li>
+                  <li><a href="">Community</a></li>
+                  <li><a href="">Devlopers</a></li>
+                  <li><a href="">Quests</a></li>
+                  <li><a href="">Official 3rd Party Merch</a></li>
+                  <li><a href="">Feedback</a></li>
+                </ul>
+              </nav>
+              <nav class="fourth-column">
+                <ul>
+                  <p>Policies</p>
+                  <li><a href="">Terms</a></li>
+                  <li><a href="">Privacy</a></li>
+                  <li><a href="">Cookie Settings</a></li>
+                  <li><a href="">Guidelines</a></li>
+                  <li><a href="">Acknowledgements</a></li>
+                  <li><a href="">Licenses</a></li>
+                  <li><a href="">Company Information</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <img src="image/discord_footer_image.svg" alt="" class="footer-last-image">
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
